@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анастасия](https://up.htmlacademy.ru/htmlcss/28/user/1424825).
-* Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff).
+* Наставник: [Артур * Трифонов](https://htmlacademy.ru/profile/wrgraff).
 
 ---
 
