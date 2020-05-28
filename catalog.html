@@ -21,7 +21,7 @@
 <main>
   <section>
   <h1>Выбор гостиницы</h1>
-  <form action="https://echo.htmlacademy.ru" method="get">
+  <form action="https://echo.htmlacademy.ru" method="get" oninput="min-priceoutput.value=min-price.value" "max-priceoutput.value=max-price.value">
     <fieldset>
       <legend>Инфраструктура:</legend>
       <ul>
@@ -57,8 +57,15 @@
       </ul>
     </fieldset>
       <div>
-      <p>Стоимость в сутки (Р):</p>
-      <p>от 0 до 3000</p>
+          <p>Стоимость в сутки (Р):</p>
+        <label for="min-price">от</label>
+        <input type="range" id="min-price" name="min-price" min="0" max="3000" step="100">
+        <output name="min-priceoutput"></output>
+    </div>
+    <div>
+      <label for="max-price">до</label>
+      <input type="range" id="max-price" name="max-price" min="0" max="3000" step="100">
+      <output name="max-priceoutput"></output>
     </div>
       <button type="submit">Показать</button>
     </p>
