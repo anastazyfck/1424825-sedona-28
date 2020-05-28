@@ -56,20 +56,19 @@
         </li>
       </ul>
     </fieldset>
-      <div>
-          <p>Стоимость в сутки (Р):</p>
-        <label for="min-price">от</label>
-        <input type="range" id="min-price" name="min-price" min="0" max="3000" step="100">
-        <output name="min-priceoutput"></output>
+          <legend>Стоимость в сутки (Р):</legend>
+        <label>от
+        <input type="number" value="0">
+        </label>
+      <label>до
+      <input type="number" value="3000">
+        </label>
+        <div>
+      <button type="button" aria-hidden="true"></button>
+      <button type="button" aria-hidden="true"></button>
     </div>
-    <div>
-      <label for="max-price">до</label>
-      <input type="range" id="max-price" name="max-price" min="0" max="3000" step="100">
-      <output name="max-priceoutput"></output>
-    </div>
-      <button type="submit">Показать</button>
-    </p>
     </fieldset>
+    <button type="submit">Показать</button>
     </form>
   </section>
   <section>
