@@ -30,6 +30,7 @@ body{
   font-size: 14px;
   font-weight: 400;
   color: var(--basic-black);
+  text-transform: uppercase;
   background-color: var(--basic-background);
 }
 
