@@ -3,7 +3,8 @@ root {
   --basic-white: #FFFFFF;
   --basic-white-dark: #CACACA;
   --basic-grey-dark: #EBEBEB;
-  --basic-grey: #F2F2F2;
+  --basic-grey: #EEEEEE;
+  --basic-grey-light: #F2F2F2;
   --basic-grey-dark: #A9A9A9
   --basic-blue-bright: #23A9E1;
   --basic-blue-light: #81B3D2;
@@ -24,8 +25,9 @@ body{
   min-width: 1220px;
   margin: 0;
   padding: 0;
+  line-height: 26px;
   font-family: "PT Sans";
-  font-size: 21px;
+  font-size: 14px;
   font-weight: 400;
   color: var(--basic-black);
   background-color: var(--basic-background);
@@ -34,4 +36,54 @@ body{
 img{
   max-width: 100%;
   height: auto;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.main-navigation-wrapper{
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a{
+  color: var(--basic-black);
+}
+
+.features-list{
+  list-style: none;
+ }
+
+.real-features{
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.real-features h4 {
+  font-size: 21px;
+  line-height: 21px;
+ }
+
+ .feature-item-first,
+ .feature-item-second {
+  color: var(--basic-white);
+  background-color: var(--basic-blue-light);
+  text-align: center;
+ }
+
+.other-features{
+  color: var(--basic-dark);
+  background-color: var(--basic-grey);
+}
+
+.other-features h3{
+  color: var(--basic-black);
+  font-size: 21px;
 }
