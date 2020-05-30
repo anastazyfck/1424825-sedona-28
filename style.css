@@ -80,6 +80,11 @@ img{
   text-align: center;
  }
 
+ .feature-item-first h3,
+ .feature-item-second h3{
+     font-size: 21px;
+ }
+
 .other-features{
   color: var(--basic-dark);
   background-color: var(--basic-grey);
