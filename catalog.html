@@ -3,25 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>Гостиницы</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+  <link href="normalize.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
   </head>
   <body>
 <header>
-<nav>
+<nav class="main-navigation">
   <a href="index.html">
     <img src="img/logo-sedona.svg" width="138" height="70" alt="City of Sedona">
   </a>
-<ul>
+  <div class="main-navigation-wrapper">
+<ul class="site-navigation">
   <li><a href="blank.html">Информация</a></li>
   <li><a href="blank.html">Фото и видео</a></li>
   <li><a href="blank.html">Карта штата</a></li>
   <li><a href="catalog.html">Гостиницы</a></li>
 </ul>
+</div>
 </nav>
 </header>
 <main>
   <section>
   <h1>Выбор гостиницы</h1>
-  <form action="https://echo.htmlacademy.ru" method="get" oninput="min-priceoutput.value=min-price.value" "max-priceoutput.value=max-price.value">
+  <form action="https://echo.htmlacademy.ru" method="get">
     <fieldset>
       <legend>Инфраструктура:</legend>
       <ul>
@@ -64,8 +69,8 @@
       <input type="number" value="3000">
         </label>
         <div>
-      <button type="button" aria-hidden="true"></button>
-      <button type="button" aria-hidden="true"></button>
+      <button type="button" aria-hidden="true">Слайдер "меньше"</button>
+      <button type="button" aria-hidden="true">Слайдер "больше"</button>
     </div>
     </fieldset>
     <button type="submit">Показать</button>
@@ -84,7 +89,7 @@
 <a href="blank.html">По убыванию</a>
 </section>
 <section><h2>Название отелей</h2>
-  <ul>
+  <ul class="type-hotel">
     <li>
         <h3><a href="blank.html">Amara resort & SPA</a></h3>
         <p>
@@ -98,7 +103,7 @@
       </p>
       <p>
         4 звезды<br>
-        Рейтинг 8,5
+        <span class="rating">Рейтинг 8,5</span>
       </p>
       </li>
     <li>
@@ -114,7 +119,7 @@
     </p>
     <p>
       3 звезды<br>
-      Рейтинг 8,9
+      <span class="rating">Рейтинг 8,9</span>
     </p>
       </li>
     <li>
@@ -130,7 +135,7 @@
     </p>
     <p>
       2 звезды<br>
-      Рейтинг 9,2
+      <span class="rating">Рейтинг 9,2</span>
     </p>
     </li>
   </ul>

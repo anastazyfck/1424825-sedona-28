@@ -5,7 +5,7 @@ root {
   --basic-grey-dark: #EBEBEB;
   --basic-grey: #EEEEEE;
   --basic-grey-light: #F2F2F2;
-  --basic-grey-dark: #A9A9A9
+  --basic-grey-dark: #A9A9A9;
   --basic-blue-bright: #23A9E1;
   --basic-blue-light: #81B3D2;
   --basic-blue: #669EC0;
@@ -14,9 +14,9 @@ root {
   --basic-dark: #231F20;
   --basic-brown-light: #766357;
   --basic-brown: #604E43;
-  --basic-brown-dark: #503E33
+  --basic-brown-dark: #503E33;
   --basic-brown-bright: #766458;
-  --basic-dark: #333333
+  --basic-dark: #333333;
   --basic-background: #888888;
 
 }
@@ -26,14 +26,14 @@ body{
   margin: 0;
   padding: 0;
   line-height: 26px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-background);
   background-image: url("img/main-background.jpg");
-  background-position: 0 70px;
+  background-position: 0 56px;
   background-repeat: no-repeat, repeat;
 }
 
@@ -42,11 +42,21 @@ img{
   height: auto;
 }
 
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  line-height: 21px;
+  background-color: var(--basic-brown-light);
+  border: none;
+}
+
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
-  background-color: transparent;
 }
 
 .main-navigation-wrapper{
@@ -111,4 +121,23 @@ img{
   font-weight: 700;
   line-height: 24px;
   text-align: center;
+}
+
+.inner-page{
+  background-color: var(--basic-white);
+  background-image: url("img/filter.jpg");
+  background-position: 0 56px;
+  background-repeat: no-repeat;
+}
+
+.type-hotel h3{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.type-hotel{
+  list-style: none;
+  color: var(--basic-dark);
+  line-height: 21px;
 }
