@@ -32,6 +32,9 @@ body{
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-background);
+  background-image: url("img/main-background.jpg");
+  background-position: 0 70px;
+  background-repeat: no-repeat, repeat;
 }
 
 img{
@@ -73,6 +76,13 @@ img{
   line-height: 21px;
  }
 
+ .description {
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 26px;
+   text-align: center;
+ }
+
  .feature-item-first,
  .feature-item-second {
   color: var(--basic-white);
@@ -82,7 +92,7 @@ img{
 
  .feature-item-first h3,
  .feature-item-second h3{
-     font-size: 21px;
+  font-size: 21px;
  }
 
 .other-features{
@@ -94,4 +104,11 @@ img{
 .other-features h3{
   color: var(--basic-black);
   font-size: 21px;
+}
+
+.form-description {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
 }
