@@ -5,7 +5,8 @@ root {
   --basic-grey-dark: #EBEBEB;
   --basic-grey: #EEEEEE;
   --basic-grey-light: #F2F2F2;
-  --basic-grey-dark: #A9A9A9;
+  --basic-grey-extra-light: #BDBBBC;
+  --basic-grey-extra-dark: #A9A9A9;
   --basic-blue-bright: #23A9E1;
   --basic-blue-light: #81B3D2;
   --basic-blue: #669EC0;
@@ -144,10 +145,33 @@ img{
   list-style: none;
 }
 
+.footer-copyright{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:focus{
+  background-color: var(--basic-blue-light);
+}
+
+.footer-copyright a:active{
+  background-color: var(--basic-grey-extra-light);
+}
+
 .social-button{
   color: var(--basic-white);
   text-align: center;
   background-color: var(--basic-blue-light);
+}
+
+.social-button:hover,
+.social-button:focus{
+  background-color: var(--basic-blue);
+}
+
+.social-button:active{
+  background-color: var(--basic-blue-dark);
 }
 
 .inner-page{
