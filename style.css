@@ -44,13 +44,23 @@ img{
 
 .button {
   font: inherit;
+  font-weight: 700;
   text-align: center;
   color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
   line-height: 21px;
-  background-color: var(--basic-brown-light);
+  background-color: var(--basic-blue-light);
   border: none;
+}
+
+.button:hover,
+.button:focus{
+  background-color: var(--basic-blue);
+}
+
+.button:active{
+  background-color: var(--basic-blue-dark);
 }
 
 .main-navigation {
@@ -123,6 +133,23 @@ img{
   text-align: center;
 }
 
+.main-footer {
+  color: var(--basic-black);
+  font-weight: 700;
+  font-size: 21px;
+  background-color: var(--basic-white);
+}
+
+.footer-social ul{
+  list-style: none;
+}
+
+.social-button{
+  color: var(--basic-white);
+  text-align: center;
+  background-color: var(--basic-blue-light);
+}
+
 .inner-page{
   background-color: var(--basic-white);
   background-image: url("img/filter.jpg");
@@ -140,4 +167,24 @@ img{
   list-style: none;
   color: var(--basic-dark);
   line-height: 21px;
+}
+
+.book-button{
+  background-color: var(--basic-brown-light);
+}
+
+.book-button:hover,
+.book-button:focus {
+  background-color: var(--basic-brown);
+}
+
+.book-button:active{
+  background-color: var(--basic-brown-dark);
+}
+
+.rating{
+  color: var(--basic-neutral-dark);
+  line-height: 21px;
+  text-align: center;
+  background-color: var(--basic-grey-light);
 }
