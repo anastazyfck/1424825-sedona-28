@@ -139,7 +139,7 @@ header a{
   text-align: center;
 }
 
-.form-finder p{
+.form-introduction{
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -148,12 +148,12 @@ header a{
   background-color: var(--basic-brown-light);
 }
 
-.form-finder p:hover,
-.form-finder p:focus{
+.form-introduction:hover,
+.form-introduction:focus{
   background-color: var(--basic-brown);
 }
 
-.form-finder p:active{
+.form-introduction:active{
   background-color: var(--basic-brown-dark);
 }
 
