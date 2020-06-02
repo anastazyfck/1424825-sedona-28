@@ -5,6 +5,7 @@
   --basic-grey-dark: #EBEBEB;
   --basic-grey: #EEEEEE;
   --basic-grey-light: #F2F2F2;
+  --basic-extra-light: #E5E5E5;
   --basic-grey-extra-light: #BDBBBC;
   --basic-grey-extra-dark: #A9A9A9;
   --basic-blue-bright: #23A9E1;
@@ -33,9 +34,6 @@ body{
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-background);
-  background-image: url("img/main-background.jpg");
-  background-position: 0 56px;
-  background-repeat: no-repeat, repeat;
 }
 
 img{
@@ -69,6 +67,12 @@ img{
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
+}
+
+header a{
+  background-image: url("img/main-background.jpg");
+  background-position: 0 56px;
+  background-repeat: no-repeat, repeat;
 }
 
 .main-navigation-wrapper{
@@ -133,6 +137,47 @@ img{
   font-weight: 700;
   line-height: 24px;
   text-align: center;
+}
+
+.form-finder p{
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var(--basic-brown-light);
+}
+
+.form-finder p:hover,
+.form-finder p:focus{
+  background-color: var(--basic-brown);
+}
+
+.form-finder p:active{
+  background-color: var(--basic-brown-dark);
+}
+
+.form-finder input[type="date_arrival"],
+.form-finder input[type="date_departure"],
+.form-finder input[type="number_adults"],
+.form-finder input[type="number_kids"]{
+  font-family: inherit;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-grey-light);
+}
+
+.form-finder input:hover{
+  background-color: var(--basic-grey-dark);
+}
+
+.form-finder input:focus{
+  background-color: var(--basic-white);
+  border: 2px solid var(--basic-extra-light);
+}
+
+.find-button{
+  font-size: 21px;
 }
 
 .main-footer {
