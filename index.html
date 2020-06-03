@@ -8,7 +8,7 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-<header>
+<header class="welcome-page">
 <nav class="main-navigation">
   <a>
   <img src="img/logo-sedona.svg" width="138" height="70" alt="City of Sedona">
@@ -70,22 +70,22 @@
         <p class="form-introduction">Поиск гостиницы в Седоне</p>
            <p>
              <label for="date_arrival">Дата заезда:</label>
-           <input type="date" name="date_arrival" id="date_arrival">
+           <input class="form-finder" type="date" name="date_arrival" id="date_arrival">
       </p>
       <p>
       <label for="date_departure">Дата выезда:</label>
-      <input type="date" name="date_departure" id="date_departure">
+      <input class="form-finder" type="date" name="date_departure" id="date_departure">
     </p>
     <p>
       <label for="number_adults">Взрослые:</label>
       <button type="button">уменьшить</button>
-      <input type="number" min="0" max="10" step="1" name="number_adults" id="number_adults">
+      <input class="form-finder" type="number" min="0" max="10" step="1" name="number_adults" id="number_adults">
       <button type="button">увеличить</button>
     </p>
     <p>
       <label for="number_kids">Дети:</label>
       <button type="button">уменьшить</button>
-      <input type="number" min="0" max="10" step="1" name="number_kids" id="number_kids">
+      <input class="form-finder" type="number" min="0" max="10" step="1" name="number_kids" id="number_kids">
       <button type="button">увеличить</button>
     </p>
       <button class="find-button button" type="submit">Найти</button>

@@ -19,7 +19,6 @@
   --basic-brown-dark: #503E33;
   --basic-brown-bright: #766458;
   --basic-dark: #333333;
-  --basic-background: #888888;
 
 }
 
@@ -33,7 +32,11 @@ body{
   font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--basic-background);
+  background-color: var(--basic-grey-light);
+}
+
+a{
+  text-decoration: none;
 }
 
 img{
@@ -69,9 +72,9 @@ img{
   color: var(--basic-black);
 }
 
-header a{
+.welcome-page {
   background-image: url("img/main-background.jpg");
-  background-position: 0 56px;
+  background-color: var(--basic-white);
   background-repeat: no-repeat, repeat;
 }
 
@@ -85,6 +88,15 @@ header a{
 
 .site-navigation a{
   color: var(--basic-black);
+  font-weight: 700;
+}
+
+.site-navigation a:hover{
+  color: var(--basic-blue-light);
+}
+
+.site-navigation a:focus{
+  color: var(--basic-brown-light);
 }
 
 .features-list{
@@ -157,21 +169,18 @@ header a{
   background-color: var(--basic-brown-dark);
 }
 
-.form-finder input[type="date_arrival"],
-.form-finder input[type="date_departure"],
-.form-finder input[type="number_adults"],
-.form-finder input[type="number_kids"]{
+.form-finder{
   font-family: inherit;
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-grey-light);
 }
 
-.form-finder input:hover{
+.form-finder:hover{
   background-color: var(--basic-grey-dark);
 }
 
-.form-finder input:focus{
+.form-finder:focus{
   background-color: var(--basic-white);
   border: 2px solid var(--basic-extra-light);
 }
@@ -219,8 +228,8 @@ header a{
   background-color: var(--basic-blue-dark);
 }
 
-.inner-logo{
-  background-color: var(--basic-white);
+.choice-filter{
+  background-color: var(--basic-grey-light);
   background-image: url("img/filter.jpg");
   background-position: 0 56px;
   background-repeat: no-repeat;
