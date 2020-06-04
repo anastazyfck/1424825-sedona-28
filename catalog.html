@@ -31,7 +31,7 @@
   <form class="choice-filter" action="https://echo.htmlacademy.ru" method="get">
     <fieldset>
       <legend>Инфраструктура:</legend>
-      <ul>
+      <ul class="filter-options">
         <li>
           <input type="checkbox" name="pool" id="pool" checked>
             <label for="pool">Бассейн</label>
@@ -48,7 +48,7 @@
     </fieldset>
     <fieldset>
       <legend>Тип жилья:</legend>
-      <ul>
+      <ul class="filter-options">
         <li>
           <input type="checkbox" name="hotel" id="hotel" checked>
             <label for="hotel">Гостиница</label>
@@ -64,10 +64,10 @@
       </ul>
     </fieldset>
           <legend>Стоимость в сутки (Р):</legend>
-        <label>от
+        <label class="filter-options">от
         <input type="number" value="0">
         </label>
-      <label>до
+      <label class="filter-options">до
       <input type="number" value="3000">
         </label>
         <div>
@@ -75,10 +75,10 @@
       <button type="button" aria-hidden="true">Слайдер "больше"</button>
     </div>
     </fieldset>
-    <button type="submit">Показать</button>
+    <button class="show-button button" type="submit">Показать</button>
     </form>
   </section>
-  <section>
+  <section class="watch-results">
   <p>Найдено:3
   </p>
   <h2>Сортировка:</h2>

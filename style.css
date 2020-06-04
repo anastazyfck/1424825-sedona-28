@@ -64,6 +64,7 @@ img{
 
 .button:active{
   background-color: var(--basic-blue-dark);
+  opacity: 0.3;
 }
 
 .main-navigation {
@@ -167,6 +168,7 @@ img{
 
 .form-introduction:active{
   background-color: var(--basic-brown-dark);
+  opacity: 0.3;
 }
 
 .form-finder{
@@ -258,6 +260,7 @@ img{
 
 .book-button:active{
   background-color: var(--basic-brown-dark);
+  opacity: 0.3;
 }
 
 .rating{
@@ -265,4 +268,61 @@ img{
   line-height: 21px;
   text-align: center;
   background-color: var(--basic-grey-light);
+}
+
+.choice-filter legend{
+  color: var(--basic-white);
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.filter-options{
+  list-style: none;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+
+.show-button{
+  font-weight: 400;
+  background-color: transparent;
+  border: 2px solid var(--basic-white);
+}
+
+.show-button:hover{
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.watch-results p{
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.watch-results h2{
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.watch-results ul{
+  list-style: none;
+}
+
+.watch-results a{
+  font-size: 12px;
+  line-height: 18px;
+  opacity: 0.3;
+  border-bottom: 1px var(--basic-blue-light) dotted;
+}
+
+.watch-results a:hover,
+.watch-results a:focus{
+  color: var(--basic-blue-light);
+  opacity: 1;
+}
+
+.watch-results a:active{
+  color: var(--basic-black);
+  border: none;
+  opacity: 1;
 }
