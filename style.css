@@ -44,6 +44,17 @@ img{
   height: auto;
 }
 
+.page{
+  height: 100%;
+}
+
+.page-body{
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
 .button {
   font-family: inherit;
   font-weight: 700;
@@ -75,16 +86,35 @@ img{
 
 .welcome-page {
   background-image: url("img/main-background.jpg");
+  width: 1200px;
+  height: 509px;
   background-color: var(--basic-white);
   background-repeat: no-repeat, repeat;
 }
 
+.intro-logo{
+  background: url("img/intro-welcome.svg") no-repeat 50% 50%;
+}
+
 .main-navigation-wrapper{
+  width: 100%;
   background-color: var(--basic-white);
+}
+
+.header-logo{
+  width: 138px;
+  height: 70px;
 }
 
 .site-navigation {
   list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  height: 56px;
 }
 
 .site-navigation a{
@@ -120,7 +150,12 @@ img{
    font-weight: 700;
    line-height: 26px;
    text-align: center;
- }
+}
+
+.description-grid{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
 
  .feature-item-first,
  .feature-item-second {
@@ -195,15 +230,26 @@ img{
   font-weight: 700;
   font-size: 21px;
   background-color: var(--basic-white);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-social{
+  margin: 0;
+  height: 120px;
+  grid-column: 2/3;
 }
 
 .footer-social ul{
   list-style: none;
+  width: 154px;
+  margin: 0 auto;
 }
 
 .footer-copyright{
   font-size: 14px;
   font-weight: 400;
+  grid-column: 3/4;
 }
 
 .footer-copyright a:hover,
