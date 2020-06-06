@@ -238,6 +238,7 @@ img{
   margin: 0;
   height: 120px;
   grid-column: 2/3;
+  justify-self: center;
 }
 
 .footer-social ul{
@@ -293,6 +294,12 @@ img{
   list-style: none;
   color: var(--basic-dark);
   line-height: 21px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 540px;
+  padding-left: 73px;
+  padding-bottom: 31px;
+  padding-right: 72px;
 }
 
 .book-button{
@@ -371,4 +378,23 @@ img{
   color: var(--basic-black);
   border: none;
   opacity: 1;
+}
+
+.social-flex{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.hotel-1{
+  flex-grow: 1;
+}
+
+.hotel-2{
+  flex-grow: 1;
+}
+
+.hotel-3{
+  flex-grow: 1;
 }
