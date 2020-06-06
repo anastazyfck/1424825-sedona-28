@@ -51,8 +51,10 @@ img{
 .page-body{
   min-height: 100%;
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
+  grid-template-columns: 400px 400px 400px;
   align-content: start;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button {
@@ -85,19 +87,10 @@ img{
 }
 
 .welcome-page {
-  background-image: url("img/main-background.jpg");
+  background: url("img/main-background.jpg") no-repeat,
+   url("img/intro-welcome.svg") no-repeat 50% 50%;
   width: 1200px;
-  height: 509px;
-  background-color: var(--basic-white);
-  background-repeat: no-repeat, repeat;
-}
-
-.intro-logo{
-  background: url("img/intro-welcome.svg") no-repeat 50% 50%;
-}
-
-.main-navigation-wrapper{
-  width: 100%;
+  min-height: 509px;
   background-color: var(--basic-white);
 }
 
@@ -111,10 +104,8 @@ img{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 1200px;
   margin: 0;
   padding: 0;
-  height: 56px;
 }
 
 .site-navigation a{
@@ -150,11 +141,6 @@ img{
    font-weight: 700;
    line-height: 26px;
    text-align: center;
-}
-
-.description-grid{
-  grid-column-start: 1;
-  grid-column-end: 4;
 }
 
  .feature-item-first,
@@ -236,14 +222,12 @@ img{
 
 .footer-social{
   margin: 0;
-  height: 120px;
-  grid-column: 2/3;
+  min-height: 120px;
   justify-self: center;
 }
 
 .footer-social ul{
   list-style: none;
-  width: 154px;
   margin: 0 auto;
 }
 
@@ -380,21 +364,9 @@ img{
   opacity: 1;
 }
 
-.social-flex{
+.social{
   display: flex;
   justify-content: space-between;
   margin-top: 36px;
   margin-bottom: 36px;
-}
-
-.hotel-1{
-  flex-grow: 1;
-}
-
-.hotel-2{
-  flex-grow: 1;
-}
-
-.hotel-3{
-  flex-grow: 1;
 }
