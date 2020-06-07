@@ -52,7 +52,8 @@ img{
   min-height: 100%;
   display: grid;
   grid-template-columns: 400px 400px 400px;
-  align-content: start;
+  grid-template-rows: auto 509px auto 120px;
+  width: 1280px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -106,6 +107,7 @@ img{
   align-items: center;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .site-navigation a{
@@ -216,8 +218,8 @@ img{
   font-weight: 700;
   font-size: 21px;
   background-color: var(--basic-white);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-start: 1;
+  grid-column-end: -1;
 }
 
 .footer-social{
