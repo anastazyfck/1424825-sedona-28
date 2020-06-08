@@ -2,12 +2,13 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Гостиницы</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
-  <link href="normalize.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+   <title>Гостиницы</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+
+  <body class="page-body">
+    <div class="page-container">
 <header>
 <nav class="main-navigation">
   <a href="index.html">
@@ -42,6 +43,7 @@
         </li>
       </ul>
     </fieldset>
+
     <fieldset>
       <legend>Тип жилья:</legend>
       <ul class="filter-options">
@@ -59,6 +61,8 @@
         </li>
       </ul>
     </fieldset>
+
+    <fieldset>
           <legend>Стоимость в сутки (Р):</legend>
         <label class="filter-options">от
         <input type="number" value="0">
@@ -74,6 +78,7 @@
     <button class="show-button button" type="submit">Показать</button>
     </form>
   </section>
+
   <section class="watch-results">
   <p>Найдено:3
   </p>
@@ -86,13 +91,15 @@
   <a href="blank.html">По возрастанию</a>
 <a href="blank.html">По убыванию</a>
 </section>
-<section><h2 class="visually-hidden">Название отелей</h2>
-  <ul class="type-hotel">
-       <li>
+
+<section>
+  <h2 class="visually-hidden">Название отелей</h2>
+   <ul class="type-hotel">
+       <li class="hotel-information">
           <h3><a href="blank.html">Amara resort & SPA</a></h3>
-        <p>
-          <img src="img/amara.jpg" width="135" height="90" alt="Фото отеля Amara resort & SPA">
-        </p>
+          <p>
+            <img src="img/amara.jpg" width="135" height="90" alt="Фото отеля Amara resort & SPA">
+          </p>
       <p>Гостиница от 4000р.
       </p>
       <p>
@@ -104,7 +111,7 @@
         <span class="rating">Рейтинг 8,5</span>
       </p>
       </li>
-    <li>
+    <li class="hotel-information">
       <h3><a href="blank.html">Desert quail inn</a></h3>
       <p>
         <img src="img/desert.jpg" width="135" height="90" alt="Фото мотеля Desert quail inn">
@@ -120,7 +127,7 @@
       <span class="rating">Рейтинг 8,9</span>
     </p>
       </li>
-    <li>
+    <li class="hotel-information">
       <h3><a href="blank.html">Villas at poco diablo</a></h3>
       <p>
         <img src="img/villas.jpg" width="135" height="90" alt="Фото апартаментов Villas at poco diablo">
@@ -139,6 +146,7 @@
   </ul>
   </section>
 </main>
+
 <footer class="main-footer">
   <section>
   <h2>контакты</h2>
@@ -166,5 +174,6 @@ Website by
 <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" alt="Логотип академии">HTML Academy</a>
 </p>
 </footer>
+</div>
 </body>
 </html>

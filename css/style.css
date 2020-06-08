@@ -50,9 +50,13 @@ img{
 
 .page-body{
   min-height: 100%;
+}
+
+.page-container {
   display: grid;
-  grid-template-columns: 400px 400px 400px;
-  grid-template-rows: auto 509px auto 120px;
+  grid-template-rows: min-content auto min-content;
+  background-color: var(--basic-white);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
   width: 1280px;
   margin-left: auto;
   margin-right: auto;
@@ -145,15 +149,13 @@ img{
    text-align: center;
 }
 
- .feature-item-first,
- .feature-item-second {
+ .feature-item{
   color: var(--basic-white);
   background-color: var(--basic-blue-light);
   text-align: center;
  }
 
- .feature-item-first h3,
- .feature-item-second h3{
+ .feature-item h3{
   font-size: 21px;
  }
 
@@ -173,6 +175,8 @@ img{
   font-weight: 700;
   line-height: 24px;
   text-align: center;
+  display: flex;
+  margin: auto;
 }
 
 .form-introduction{
@@ -199,6 +203,8 @@ img{
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-grey-light);
+  margin-left: 316px;
+  margin-right: 316px;
 }
 
 .form-finder:hover{
@@ -218,8 +224,10 @@ img{
   font-weight: 700;
   font-size: 21px;
   background-color: var(--basic-white);
-  grid-column-start: 1;
-  grid-column-end: -1;
+  display: grid;
+  grid-template-columns: 1fr 400px 1fr;
+  padding-left: 73px;
+  padding-right: 73px;
 }
 
 .footer-social{
@@ -280,12 +288,10 @@ img{
   list-style: none;
   color: var(--basic-dark);
   line-height: 21px;
-  display: flex;
-  flex-wrap: wrap;
-  width: 540px;
-  padding-left: 73px;
-  padding-bottom: 31px;
-  padding-right: 72px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-left: 73px;
+  margin-right: 73px;
 }
 
 .book-button{
@@ -371,4 +377,13 @@ img{
   justify-content: space-between;
   margin-top: 36px;
   margin-bottom: 36px;
+}
+
+.search-form{
+  display: grid;
+  grid-template-rows: auto 594px;
+}
+
+.hotel-information{
+  display: flex;
 }

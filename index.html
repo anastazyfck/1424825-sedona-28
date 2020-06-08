@@ -3,26 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+     <link href="css/style.css" rel="stylesheet">
   </head>
+
   <body class="page-body">
+    <div class="page-container">
 <header>
-<nav class="main-navigation">
+ <nav class="main-navigation">
   <a href="index.html">
-<img src="img/logo-sedona.svg" width="138" height="70" alt="City of Sedona">
-</a>
-<ul class="site-navigation">
-  <li><a href="blank.html">Информация</a></li>
-  <li><a href="blank.html">Фото и видео</a></li>
-  <li><a href="blank.html">Карта штата</a></li>
-  <li><a href="catalog.html">Гостиницы</a></li>
-</ul>
-<div class="welcome-page">
-</div>
-</nav>
+   <img src="img/logo-sedona.svg" width="138" height="70" alt="City of Sedona">
+  </a>
+  <ul class="site-navigation">
+   <li><a href="blank.html">Информация</a></li>
+   <li><a href="blank.html">Фото и видео</a></li>
+   <li><a href="blank.html">Карта штата</a></li>
+   <li><a href="catalog.html">Гостиницы</a></li>
+  </ul>
+   <div class="welcome-page">
+  </div>
+ </nav>
 </header>
+
     <main>
       <h1 class="visually-hidden">Sedona</h1>
       <p class="description">Седона-небольшой городок в Аризоне,<br> заслуживающий большего!</p>
@@ -30,7 +32,7 @@
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
         <ul class="features-list">
-          <li class="feature-item-first">
+          <li class="feature-item">
             <h3>Настоящий<br>городок</h3>
           <p> №1 <br> Седона - не аттракцион для туристов, там течёт своя жизнь</p>
           <img src="img/true.jpg" width="800" height="256" alt="Фото города">
@@ -43,7 +45,7 @@
             <p>Не только китайского,но и местного<br>производства!</p></li>
           </ul>
           </li>
-          <li class="feature-item-second">
+          <li class="feature-item">
             <img src="img/bridge.jpg" width="800" height="256" alt="Фото горного моста">
           <h3>Там есть<br>мост дьявола</h3>
           <p>№2<br>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
@@ -63,11 +65,11 @@
         </ul>
       </section>
 
-      <section>
+      <section class="search-form">
         <h2 class="visually-hidden">Форма поиска</h2>
         <p><span class="form-description">Заинтересовались?</span><br>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <form class="form-finder" action="https://echo.htmlacademy.ru/courses" method="post">
-        <p class="form-introduction">Поиск гостиницы в Седоне</p>
+        <button type="button" class="form-introduction">Поиск гостиницы в Седоне</button>
            <p>
              <label for="date_arrival">Дата заезда:</label>
            <input class="form-finder" type="date" name="date_arrival" id="date_arrival">
@@ -92,6 +94,7 @@
       </form>
       </section>
     </main>
+
     <footer class="main-footer">
       <section>
       <h2 class="visually-hidden">контакты</h2>
@@ -119,5 +122,6 @@
   <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" alt="Логотип академии">HTML Academy</a>
 </p>
     </footer>
+  </div>
   </body>
 </html>
