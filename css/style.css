@@ -391,10 +391,21 @@ img{
 .book-conditions{
   display: flex;
   flex-wrap: wrap;
-  width: 450px;
-  margin: auto;
+  width: 270px;
+  margin-right: auto;
+  margin-top: 23.5px;
+  margin-bottom: 31px;
 }
 
-.book-conditions p img{
-  order: -1;
+.photo-hotel{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 80px;
+  margin-right: 29px;
+}
+
+.rating-numbers{
+  margin-right: 73px;
+  margin-top: 29px;
+  margin-bottom: 31px;
 }
