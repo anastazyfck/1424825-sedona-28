@@ -387,3 +387,14 @@ img{
 .hotel-information{
   display: flex;
 }
+
+.book-conditions{
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  margin-right: 700px;
+}
+
+.book-conditions p img{
+  order: -1;
+}
