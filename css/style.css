@@ -73,6 +73,7 @@ img{
   line-height: 21px;
   background-color: var(--basic-blue-light);
   border: none;
+  padding: 3px 16px;
 }
 
 .button:hover,
@@ -309,10 +310,16 @@ img{
 }
 
 .rating{
+  display: inline-block;
   color: var(--basic-neutral-dark);
   line-height: 21px;
   text-align: center;
   background-color: var(--basic-grey-light);
+  margin-top: 48px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 12px;
+  padding-left: 15px;
 }
 
 .choice-filter legend{
@@ -400,7 +407,7 @@ img{
 .photo-hotel{
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-left: 80px;
+  margin-left: 73px;
   margin-right: 29px;
 }
 
@@ -408,4 +415,18 @@ img{
   margin-right: 73px;
   margin-top: 29px;
   margin-bottom: 31px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
