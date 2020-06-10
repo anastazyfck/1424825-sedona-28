@@ -404,6 +404,10 @@ img{
   margin-bottom: 31px;
 }
 
+.book-conditions h3 a{
+  color: var(--basic-black);
+}
+
 .photo-hotel{
   margin-top: 30px;
   margin-bottom: 30px;
