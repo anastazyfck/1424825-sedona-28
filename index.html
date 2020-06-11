@@ -31,7 +31,7 @@
       <p class="description">Седона-небольшой городок в Аризоне,<br> заслуживающий большего!</p>
       <section>
         <h2 class="visually-hidden">Преимущества Седоны</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+        <p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
         <ul class="features-list">
           <li class="feature-item">
             <h3>Настоящий<br>городок</h3>
@@ -68,17 +68,19 @@
 
       <section class="search-form">
         <h2 class="visually-hidden">Форма поиска</h2>
-        <p><span class="form-description">Заинтересовались?</span><br>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="interested-offer"><span class="form-description">Заинтересовались?</span><br>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <form class="form-finder" action="https://echo.htmlacademy.ru/courses" method="post">
         <button type="button" class="form-introduction">Поиск гостиницы в Седоне</button>
-           <p>
+        <div class="form-look">
+           <p class="date-type">
              <label for="date_arrival">Дата заезда:</label>
            <input class="form-finder" type="date" name="date_arrival" id="date_arrival">
       </p>
-      <p>
+      <p class="date-type">
       <label for="date_departure">Дата выезда:</label>
       <input class="form-finder" type="date" name="date_departure" id="date_departure">
     </p>
+    <div class="adults-children">
     <p>
       <label for="number_adults">Взрослые:</label>
       <button type="button">уменьшить</button>
@@ -91,7 +93,9 @@
       <input class="form-finder" type="number" min="0" max="10" step="1" name="number_kids" id="number_kids">
       <button type="button">увеличить</button>
     </p>
+  </div>
       <button class="find-button button" type="submit">Найти</button>
+        </div>
       </form>
       </section>
     </main>

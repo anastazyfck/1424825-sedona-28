@@ -74,6 +74,7 @@ img{
   background-color: var(--basic-blue-light);
   border: none;
   padding: 3px 16px;
+  margin-right: 6px;
 }
 
 .button:hover,
@@ -130,12 +131,18 @@ img{
 
 .features-list{
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
  }
 
 .real-features{
+  grid-column: 1/-1;
   list-style: none;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 330px;
 }
 
 .real-features h4 {
@@ -150,7 +157,14 @@ img{
    text-align: center;
 }
 
+.five-reasons{
+  text-align: center;
+}
+
  .feature-item{
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   color: var(--basic-white);
   background-color: var(--basic-blue-light);
   text-align: center;
@@ -175,9 +189,14 @@ img{
   font-size: 30px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.interested-offer{
+  display: block;
+  margin-left: 383px;
+  margin-right: 383px;
+  margin-top: 58px;
   text-align: center;
-  display: flex;
-  margin: auto;
 }
 
 .form-introduction{
@@ -187,6 +206,9 @@ img{
   text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-brown-light);
+  width: 100%;
+  padding: 30px 125px;
+  text-transform: uppercase;
 }
 
 .form-introduction:hover,
@@ -203,9 +225,24 @@ img{
   font-family: inherit;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--basic-grey-light);
-  margin-left: 316px;
-  margin-right: 316px;
+  background-color: var(--basic-white);
+  width: 568px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-look{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.date-type{
+  display: flex;
+  width: 458px;
+}
+
+.adults-children{
+  display: flex;
 }
 
 .form-finder:hover{
@@ -219,6 +256,9 @@ img{
 
 .find-button{
   font-size: 21px;
+  width: 100%;
+  margin: 55px;
+  padding: 16px 182px;
 }
 
 .main-footer {
@@ -406,6 +446,12 @@ img{
 
 .book-conditions h3 a{
   color: var(--basic-black);
+  display: inline-block;
+  margin-bottom: 7px;
+}
+
+.type-price{
+  margin: 0;
 }
 
 .photo-hotel{
@@ -419,6 +465,10 @@ img{
   margin-right: 73px;
   margin-top: 29px;
   margin-bottom: 31px;
+}
+
+.book-conditions .button{
+  margin-top: 15.5px;
 }
 
 .visually-hidden:not(:focus):not(:active),
