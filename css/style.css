@@ -94,8 +94,8 @@ img{
 }
 
 .welcome-page {
-  background: url("img/main-background.jpg") no-repeat,
-   url("img/intro-welcome.svg") no-repeat 50% 50%;
+  background: url("../img/main-background.jpg") no-repeat,
+   url("../img/intro-welcome.svg") no-repeat 50% 50%;
   width: 1200px;
   min-height: 509px;
   background-color: var(--basic-white);
@@ -314,7 +314,7 @@ img{
 
 .choice-filter{
   background-color: var(--basic-grey-light);
-  background-image: url("img/filter.jpg");
+  background-image: url("../img/filter.jpg");
   background-position: 0 56px;
   background-repeat: no-repeat;
 }
