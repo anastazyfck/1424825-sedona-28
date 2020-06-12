@@ -194,7 +194,6 @@ img{
 }
 
 .interested-offer{
-  display: block;
   margin-left: 383px;
   margin-right: 383px;
   margin-top: 58px;
@@ -475,7 +474,7 @@ img{
 
 .book-conditions h3{
   margin-bottom: 7px;
-  margin-top: 23.5px;
+  margin-top: 24px;
 }
 
 .book-conditions p{
@@ -508,8 +507,7 @@ img{
   left: 571px;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
