@@ -114,6 +114,8 @@ img{
   margin: 0;
   padding: 0;
   width: 100%;
+  position: relative;
+  min-height: 56px;
 }
 
 .site-navigation a{
@@ -238,11 +240,35 @@ img{
 
 .date-type{
   display: flex;
+  align-items: center;
   width: 458px;
+  margin-left: 55px;
+  margin-right: 55px;
+}
+
+.date-type:first-child{
+  margin-top: 55px;
 }
 
 .adults-children{
   display: flex;
+}
+
+.adults-only{
+  width: 225px;
+  margin-left: 55px;
+}
+
+.children-only{
+  width: 180px;
+  margin-right: 55px;
+  margin-left: 53px;
+}
+
+.adults-only input,
+.children-only input{
+  width: 100%;
+  margin-left: 11px;
 }
 
 .form-finder:hover{
@@ -475,6 +501,11 @@ img{
 
 .book-conditions .button{
   margin-top: 15.5px;
+}
+
+.logo-place{
+  position: absolute;
+  left: 571px;
 }
 
 .visually-hidden:not(:focus):not(:active),
