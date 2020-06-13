@@ -19,6 +19,7 @@
   --basic-brown-dark: #503E33;
   --basic-brown-bright: #766458;
   --basic-dark: #333333;
+  --basic-grey-middle: #ABABAB;
 
 }
 
@@ -171,6 +172,8 @@ html{
   color: var(--basic-white);
   background-color: var(--basic-blue-light);
   text-align: center;
+  margin: 0;
+  padding: 0;
  }
 
  .feature-item h3{
@@ -341,8 +344,36 @@ html{
 .choice-filter{
   background-color: var(--basic-grey-light);
   background-image: url("../img/filter.jpg");
-  background-position: 0 56px;
   background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.choice-filter fieldset{
+  padding: 0;
+  margin: 0;
+  border: none;
+  margin-left: 73px;
+  margin-right: 73px;
+  margin-top: 26px;
+}
+
+.choice-filter ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.choice-filter li{
+  padding-top: 25px;
+}
+
+.choice-filter li:last-child{
+  margin-bottom: 32px;
+}
+
+.daily-price{
+  display: flex;
 }
 
 .type-hotel h3{
@@ -412,9 +443,21 @@ html{
   background-color: var(--basic-white);
 }
 
+.watch-results{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 73px;
+  margin-right: 73px;
+}
+
 .watch-results p{
   font-size: 21px;
   font-weight: 700;
+  margin: 0;
+  margin-top: 29px;
+  margin-bottom: 29px;
+  margin-right: 46px;
 }
 
 .watch-results h2{
@@ -443,6 +486,70 @@ html{
   color: var(--basic-black);
   border: none;
   opacity: 1;
+}
+
+.range-filter{
+  margin-top: 11px;
+  width: 317px;
+}
+
+.range-controls{
+  margin-top: 20px;
+  position: relative;
+}
+
+.range-controls .scale{
+  height: 2px;
+  background: var(--basic-white);
+  opacity: 0.3;
+}
+
+.range-controls .bar{
+  height: 2px;
+  background: var(--basic-white);
+  width: 75%;
+}
+
+.range-controls .toggle {
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  border-radius: 50%;
+  background-color: var(--basic-grey-middle);
+  position: absolute;
+  bottom: 17px;
+  left: 0;
+  cursor: pointer;
+}
+
+.range-controls .toggle-max {
+  left: 241px;
+}
+
+.guideline{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--basic-black);
+  opacity: 0.3;
+  margin-top: 32px;
+  margin-bottom: 36px;
+}
+
+.guideline-general{
+  margin: 0;
+  margin-top: 31px;
+  margin-bottom: 37px;
+  margin-right: 40px;
+}
+
+.more-less{
+  display: flex;
+  margin-left: auto;
+  margin-top: 40px;
+  margin-bottom: 36px;
 }
 
 .social{

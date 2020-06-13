@@ -63,18 +63,25 @@
       </ul>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="daily-price">
           <legend>Стоимость в сутки (Р):</legend>
+          <div class="range-filter">
          <label class="filter-options">от
           <input type="number" value="0">
         </label>
       <label class="filter-options">до
          <input type="number" value="3000">
         </label>
-    <div>
+    <div class="range-controls">
+      <div class="scale">
+        <div class="bar"></div>
+        <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+      </div>
       <button type="button" aria-hidden="true">Слайдер "меньше"</button>
       <button type="button" aria-hidden="true">Слайдер "больше"</button>
     </div>
+  </div>
     </fieldset>
       <button class="show-button button" type="submit">Показать</button>
     </form>
@@ -83,14 +90,16 @@
   <section class="watch-results">
    <p>Найдено:3
    </p>
-  <h2>Сортировка:</h2>
-   <ul>
+  <h2 class="guideline-general">Сортировка:</h2>
+   <ul class="guideline">
     <li><a href="blank.html">По цене</a></li>
     <li><a href="blank.html">По типу</a></li>
     <li><a href="blank.html">По рейтингу</a></li>
    </ul>
-     <a href="blank.html">По возрастанию</a>
-     <a href="blank.html">По убыванию</a>
+   <div class="more-less">
+     <a class="visually-hidden" href="blank.html">По возрастанию</a>
+     <a class="visually-hidden" href="blank.html">По убыванию</a>
+   </div>
 </section>
 
 <section>
