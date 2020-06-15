@@ -189,6 +189,51 @@ html{
   font-size: 21px;
  }
 
+.feature-item img{
+  grid-column: span 2;
+  min-height: 256px;
+}
+
+.feature-first{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.feature-second{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.feature-first p{
+  padding: 0;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 54px;
+  margin-left: 52px;
+  margin-right: 51px;
+}
+
+.feature-second p{
+  padding: 0;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 51px;
+  margin-left: 50px;
+  margin-right: 49px;
+}
+
+.feature-first h3{
+  margin: 0;
+  margin-top: 47px;
+}
+
+.feature-second h3{
+  margin: 0;
+  margin-top: 47px;
+}
+
 .other-features{
   color: var(--basic-dark);
   background-color: var(--basic-grey);
