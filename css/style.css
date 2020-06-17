@@ -96,8 +96,8 @@ html{
 }
 
 .welcome-page {
-  background: url("../img/main-background.jpg") no-repeat,
-   url("../img/intro-welcome.svg") no-repeat 50% 50%;
+  background: url("../img/intro-welcome.svg") no-repeat 50% 50%,
+  url("../img/main-background.jpg") no-repeat;
   width: 1200px;
   min-height: 509px;
   background-color: var(--basic-white);
