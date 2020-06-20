@@ -176,11 +176,13 @@ html{
    line-height: 26px;
    text-align: center;
    margin-top: 43px;
+   margin-bottom: 42px;
 }
 
 .five-reasons{
   text-align: center;
   margin-bottom: 51px;
+  margin-top: 17px;
 }
 
  .feature-item{
@@ -912,7 +914,7 @@ html{
 
 .logo-place{
   position: absolute;
-  left: 531px;
+  left: 571px;
   display: inline-block;
 }
 
