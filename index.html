@@ -1,156 +1,164 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
-     <link rel="stylesheet" href="css/normalize.css">
-     <link href="css/style.css" rel="stylesheet">
-  </head>
-
-  <body class="page-body">
-    <div class="page-container">
-<header>
- <nav class="main-navigation">
-  <a href="index.html">
-   <img class="logo-place" src="img/logo-sedona.svg" width="138" height="70" alt="City of Sedona">
-  </a>
-  <ul class="site-navigation">
-   <li><a href="blank.html">Информация</a></li>
-   <li><a href="blank.html">Фото и видео</a></li>
-   <li><a href="blank.html">Карта штата</a></li>
-   <li><a href="catalog.html">Гостиницы</a></li>
-  </ul>
-   <div class="welcome-page">
-  </div>
- </nav>
-</header>
-
-    <main>
-      <h1 class="visually-hidden">Sedona</h1>
-      <p class="description">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</p>
-      <section>
-        <h2 class="visually-hidden">Преимущества Седоны</h2>
-        <p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
-        <ul class="features-list">
-          <li class="feature-item">
-            <div class="feature-text">
-            <h3>Настоящий<br>городок</h3>
-          <p>
-            <span class="number-design">- №1 -</span>
-            <br> Седона - не аттракцион для туристов, там течёт своя жизнь
-          </p>
-        </div>
-          <img src="img/true.jpg" width="800" height="256" alt="Фото города">
-          <ul class="real-features">
-            <li><h4>Жильё</h4>
-            <p>Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p></li>
-            <li><h4>Еда</h4>
-            <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p></li>
-            <li><h4>Сувениры</h4>
-            <p>Не только китайского,но и местного<br>производства!</p></li>
-          </ul>
-          </li>
-          <li class="feature-item">
-            <img src="img/bridge.jpg" width="800" height="256" alt="Фото горного моста">
-            <div class="feature-text">
-          <h3>Там есть<br>мост дьявола</h3>
-          <p>
-            <span class="number-design">- №2 -</span><br>
-            Да, по нему можно пройти! Если конечно<br>вы осмелитесь
-          </p>
-        </div>
-          </li>
-          <li class="other-features">
-            <h3>Небольшая<br>площадь</h3>
-          <p>
-            <span class="number-design">- №3 -</span>
-            <br>Все достопримечательности<br>находятся очень близко</p>
-            </li>
-          <li class="other-features">
-            <h3>Красивая<br>дорога</h3>
-          <p>
-            <span class="number-design">- №4 -</span>
-            <br>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
-          </li>
-          <li class="other-features">
-            <h3>Мало<br>туристов</h3>
-          <p>
-            <span class="number-design">- №5 -</span>
-            <br>Большинство едет в Гранд Каньон<br>и толпится там</p>
-            </li>
-        </ul>
-      </section>
-
-      <section class="search-form">
-        <h2 class="visually-hidden">Форма поиска</h2>
-        <p class="interested-offer"><span class="form-description-highlight">Заинтересовались?</span><br>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <form class="form-finder" action="https://echo.htmlacademy.ru/courses" method="post">
-        <button type="button" class="form-introduction">Поиск гостиницы в Седоне</button>
-        <div class="form-look">
-           <p class="date-type">
-             <label for="date_arrival">Дата заезда:</label>
-           <input class="form-finder" type="text" name="date_arrival" id="date_arrival" placeholder="24 апреля 2017">
-          <button class="button-calendar" type="button"></button>
-       </p>
-      <p class="date-type">
-    <label for="date_departure">Дата выезда:</label>
-     <input class="form-finder" type="text" name="date_departure" id="date_departure" placeholder="4 июля 2017">
-      <button class="button-calendar" type="button"></button>
-     </p>
-    <div class="adults-children">
-    <p class="adults-only">
-      <label for="number_adults">Взрослые:</label>
-       <button class="button-minus" type="button"></button>
-      <input class="form-finder" type="number" min="0" max="10" step="1" name="number_adults" id="number_adults" placeholder="2">
-       <button class="button-plus" type="button"></button>
-    </p>
-    <p class="children-only">
-      <label for="number_kids">Дети:</label>
-      <button class="button-minus" type="button"></button>
-      <input class="form-finder" type="number" min="0" max="10" step="1" name="number_kids" id="number_kids" placeholder="0">
-      <button class="button-plus" type="button"></button>
-    </p>
-  </div>
-      <button class="find-button button" type="submit">Найти</button>
-        </div>
-      </form>
-      </section>
-    </main>
-
-    <footer class="main-footer">
-      <section>
-      <h2 class="visually-hidden">контакты</h2>
-      <p class="footer-tag">
-        #visitsedona<br>
-        <span class="footer-phone">Тел: +7(495)666-01-66</span>
-      </p>
-    </section>
-    <section class="footer-social">
-      <h2 class="visually-hidden">социальные сети</h2>
-      <ul class="social">
-        <li>
-          <a class="social-button" href="blank.html"><span class="visually-hidden">Твиттер</span>
-            <div class="logo-twitter"></div>
-          </a>
-        </li>
-        <li>
-          <a class="social-button" href="blank.html"><span class="visually-hidden">Фейсбук</span>
-            <div class="logo-facebook"></div>
-          </a>
-        </li>
-        <li>
-          <a class="social-button" href="blank.html"><span class="visually-hidden">Ютуб</span>
-            <div class="logo-youtube"></div>
-          </a>
-        </li>
-      </ul>
-    </section>
-      <p class="footer-copyright">
-     <span class="copyright-by">Website by</span>
-    <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="logo-html" src="img/logo-htmlacademy.svg" width="115" alt="Логотип академии"><span class="visually-hidden">HTML Academy</span></a>
-    </p>
-    </footer>
-  </div>
-  </body>
+   <head>
+      <meta charset="utf-8">
+      <title>HTML Academy: Седона</title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link href="css/style.css" rel="stylesheet">
+   </head>
+   <body class="page-body">
+      <div class="page-container">
+         <header>
+            <nav class="main-navigation">
+               <a href="index.html">
+               <img class="logo-place" src="img/logo-sedona.svg" width="138" height="70" alt="City of Sedona">
+               </a>
+               <ul class="site-navigation">
+                  <li><a href="blank.html">Информация</a></li>
+                  <li><a href="blank.html">Фото и видео</a></li>
+                  <li><a href="blank.html">Карта штата</a></li>
+                  <li><a href="catalog.html">Гостиницы</a></li>
+               </ul>
+               <div class="welcome-page">
+               </div>
+            </nav>
+         </header>
+         <main>
+            <h1 class="visually-hidden">Sedona</h1>
+            <p class="description">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+            <section>
+               <h2 class="visually-hidden">Преимущества Седоны</h2>
+               <p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+               <ul class="features-list">
+                  <li class="feature-item">
+                     <div class="feature-text">
+                        <h3>Настоящий<br>городок</h3>
+                        <p>
+                           <span class="number-design">- №1 -</span>
+                           <br> Седона - не аттракцион для туристов, там течёт своя жизнь
+                        </p>
+                     </div>
+                     <img src="img/true.jpg" width="800" height="256" alt="Фото города">
+                     <ul class="real-features">
+                        <li>
+                           <h4>Жильё</h4>
+                           <p>Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
+                        </li>
+                        <li>
+                           <h4>Еда</h4>
+                           <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
+                        </li>
+                        <li>
+                           <h4>Сувениры</h4>
+                           <p>Не только китайского,но и местного<br>производства!</p>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="feature-item">
+                     <img src="img/bridge.jpg" width="800" height="256" alt="Фото горного моста">
+                     <div class="feature-text">
+                        <h3>Там есть<br>мост дьявола</h3>
+                        <p>
+                           <span class="number-design">- №2 -</span><br>
+                           Да, по нему можно пройти! Если конечно<br>вы осмелитесь
+                        </p>
+                     </div>
+                  </li>
+                  <li class="other-features">
+                     <h3>Небольшая<br>площадь</h3>
+                     <p>
+                        <span class="number-design">- №3 -</span>
+                        <br>Все достопримечательности<br>находятся очень близко
+                     </p>
+                  </li>
+                  <li class="other-features">
+                     <h3>Красивая<br>дорога</h3>
+                     <p>
+                        <span class="number-design">- №4 -</span>
+                        <br>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!
+                     </p>
+                  </li>
+                  <li class="other-features">
+                     <h3>Мало<br>туристов</h3>
+                     <p>
+                        <span class="number-design">- №5 -</span>
+                        <br>Большинство едет в Гранд Каньон<br>и толпится там
+                     </p>
+                  </li>
+               </ul>
+            </section>
+            <section class="search-form">
+               <h2 class="visually-hidden">Форма поиска</h2>
+               <p class="interested-offer"><span class="form-description-highlight">Заинтересовались?</span><br>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+               <form class="form-finder" action="https://echo.htmlacademy.ru/courses" method="post">
+                  <button type="button" class="form-introduction">Поиск гостиницы в Седоне</button>
+                  <div class="form-look">
+                     <p class="date-type">
+                        <label for="date_arrival">Дата заезда:</label>
+                        <input class="form-finder" type="text" name="date_arrival" id="date_arrival" placeholder="24 апреля 2017">
+                        <button class="button-calendar" type="button"></button>
+                     </p>
+                     <p class="date-type">
+                        <label for="date_departure">Дата выезда:</label>
+                        <input class="form-finder" type="text" name="date_departure" id="date_departure" placeholder="4 июля 2017">
+                        <button class="button-calendar" type="button"></button>
+                     </p>
+                     <div class="adults-children">
+                        <p class="adults-only">
+                           <label for="number_adults">Взрослые:</label>
+                           <button class="button-minus" type="button"></button>
+                           <input class="form-finder" type="number" min="0" max="10" step="1" name="number_adults" id="number_adults" placeholder="2">
+                           <button class="button-plus" type="button"></button>
+                        </p>
+                        <p class="children-only">
+                           <label for="number_kids">Дети:</label>
+                           <button class="button-minus" type="button"></button>
+                           <input class="form-finder" type="number" min="0" max="10" step="1" name="number_kids" id="number_kids" placeholder="0">
+                           <button class="button-plus" type="button"></button>
+                        </p>
+                     </div>
+                     <button class="find-button button" type="submit">Найти</button>
+                  </div>
+               </form>
+            </section>
+         </main>
+         <footer class="main-footer">
+            <section>
+               <h2 class="visually-hidden">контакты</h2>
+               <p class="footer-tag">
+                  #visitsedona<br>
+                  <span class="footer-phone">Тел: +7(495)666-01-66</span>
+               </p>
+            </section>
+            <section class="footer-social">
+               <h2 class="visually-hidden">социальные сети</h2>
+               <ul class="social">
+                  <li>
+                     <a class="social-button" href="blank.html">
+                        <span class="visually-hidden">Твиттер</span>
+                        <div class="logo-twitter"></div>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="social-button" href="blank.html">
+                        <span class="visually-hidden">Фейсбук</span>
+                        <div class="logo-facebook"></div>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="social-button" href="blank.html">
+                        <span class="visually-hidden">Ютуб</span>
+                        <div class="logo-youtube"></div>
+                     </a>
+                  </li>
+               </ul>
+            </section>
+            <p class="footer-copyright">
+               <span class="copyright-by">Website by</span>
+               <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="logo-html" src="img/logo-htmlacademy.svg" width="115" alt="Логотип академии"><span class="visually-hidden">HTML Academy</span></a>
+            </p>
+         </footer>
+      </div>
+   </body>
 </html>
