@@ -213,7 +213,7 @@ html{
   padding: 0;
   margin: 0;
   margin-top: 25px;
-  margin-bottom: 51px;
+  margin-bottom: 31px;
   margin-left: 45px;
   margin-right: 45px;
 }
@@ -221,6 +221,11 @@ html{
 .feature-text h3{
   margin: 0;
   margin-top: 47px;
+}
+
+.number-design{
+  display: inline-block;
+  margin-bottom: 23px;
 }
 
 .other-features{
@@ -315,6 +320,8 @@ html{
   padding-bottom: 6px;
   padding-left: 13px;
   font-weight: 700;
+  opacity: 1;
+  line-height: 26px;
 }
 
 .date-type input:hover{
@@ -352,12 +359,42 @@ html{
   background-image: url("../img/calendar-blue.svg");
 }
 
-.adults-children{
-  display: flex;
+.button-minus{
+    position: absolute;
+    width: 12px;
+    height: 3px;
+    background-image: url("../img/rectangle.svg");
+    background-repeat: no-repeat;
+    border: none;
+    background-color: inherit;
+  }
+
+.button-plus{
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-image: url("../img/union.svg");
+  background-repeat: no-repeat;
+  border: none;
+  background-color: inherit;
 }
 
-.adults-children label{
+.adults-children{
+  display: flex;
+  width: 458px;
+}
+
+.adults-only label{
   font-weight: 700;
+  display: inline-block;
+  min-width: 101px;
+  margin-right: 11px;
+}
+
+.children-only label{
+  font-weight: 700;
+  display: inline-block;
+  min-width: 68px;
 }
 
 .children-only input,
@@ -367,13 +404,12 @@ html{
   padding: 0;
   border: none;
   background-color: var(--basic-grey-light);
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 39px;
-  padding-right: 39px;
-  margin-left: 11px;
   font-weight: 700;
   color: var(--basic-black);
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  line-height: 26px;
 }
 
 .adults-only{
@@ -448,6 +484,10 @@ html{
   padding: 0;
 }
 
+.logo-html{
+  position: absolute;
+}
+
 .footer-copyright img{
   margin-top: 39px;
   margin-bottom: 41px;
@@ -465,6 +505,9 @@ html{
 .copyright-by{
   display: inline-block;
   text-align: center;
+  margin-top: 49px;
+  margin-bottom: 45px;
+  margin-right: 8px;
 }
 
 .social-button{
