@@ -602,6 +602,8 @@ html{
   line-height: 21px;
   text-align: center;
   background-color: var(--basic-grey-light);
+  margin: 0;
+  padding: 0;
   margin-top: 48px;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -763,16 +765,35 @@ html{
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.guideline li{
+  display: inline-block;
+  margin-top: 31px;
+  margin-bottom: 36px;
+  padding-right: 32px;
   color: var(--basic-black);
   opacity: 0.3;
-  margin-top: 32px;
-  margin-bottom: 36px;
+}
+
+.guideline a{
+  border-bottom: 1px dashed var(--basic-blue-light);
+}
+
+.guideline a:hover,
+.guideline a:focus{
+  color: var(--basic-blue-light);
+}
+
+.guideline a:active{
+  color: var(--basic-black);
+  border: none;
 }
 
 .guideline-general{
   margin: 0;
   margin-top: 31px;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
   margin-right: 40px;
 }
 
