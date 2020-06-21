@@ -27,7 +27,7 @@ body{
   min-width: 1220px;
   margin: 0;
   padding: 0;
-  line-height: 26px;
+  line-height: 21px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -113,7 +113,6 @@ html{
 .site-navigation {
   list-style: none;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -136,6 +135,14 @@ html{
 
 .site-navigation a:focus{
   color: var(--basic-brown-light);
+}
+
+site-navigation a:nth-child(1+2){
+  margin-left: auto;
+}
+
+site-navigation a:nth-child(3+4){
+  margin-right: auto;
 }
 
 .features-list{
@@ -181,6 +188,7 @@ html{
 
 .five-reasons{
   text-align: center;
+  line-height: 26px;
   margin-bottom: 51px;
   margin-top: 17px;
 }
@@ -214,8 +222,8 @@ html{
 .feature-text p{
   padding: 0;
   margin: 0;
-  margin-top: 25px;
-  margin-bottom: 31px;
+  margin-top: 28px;
+  margin-bottom: 50px;
   margin-left: 45px;
   margin-right: 45px;
 }
@@ -251,16 +259,17 @@ html{
 .form-description-highlight {
   font-size: 30px;
   font-weight: 700;
-  line-height: 24px;
   margin-bottom: 30px;
   display: inline-block;
 }
 
 .interested-offer{
-  margin-left: 383px;
-  margin-right: 383px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 58px;
+  margin-bottom: 44px;
   text-align: center;
+  line-height: 24px;
 }
 
 .form-introduction{
@@ -298,14 +307,14 @@ html{
 .form-look{
   display: flex;
   flex-wrap: wrap;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .date-type{
   display: flex;
   align-items: center;
-  width: 458px;
-  margin-left: 55px;
-  margin-right: 55px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .date-type:first-child{
@@ -313,10 +322,10 @@ html{
 }
 
 .date-type input{
-  width: 346px;
+  width: 342px;
   margin: 0;
   padding: 0;
-  border: none;
+  border: 2px solid var(--basic-grey-light);
   background-color: var(--basic-grey-light);
   padding-top: 6px;
   padding-bottom: 6px;
@@ -328,17 +337,19 @@ html{
 
 .date-type input:hover{
   background-color: var(--basic-grey-dark);
+  border: 2px solid var(--basic-grey-dark);
 }
 
 .date-type input:focus{
   background-color: var(--basic-white);
-  border: 2px solid #E5E5E5;
+  border: 2px solid var(--basic-extra-light);
 }
 
 .date-type label{
   display: inline-block;
-  width: 121px;
+  margin-right: 26px;
   font-weight: 700;
+  line-height: 26px;
 }
 
 .button-calendar{
@@ -361,7 +372,7 @@ html{
   background-image: url("../img/calendar-blue.svg");
 }
 
-.button-minus{
+.button-less{
     position: absolute;
     width: 12px;
     height: 3px;
@@ -371,7 +382,7 @@ html{
     background-color: inherit;
   }
 
-.button-plus{
+.button-more{
   position: absolute;
   width: 11px;
   height: 11px;
@@ -383,14 +394,15 @@ html{
 
 .adults-children{
   display: flex;
-  width: 458px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .adults-only label{
   font-weight: 700;
   display: inline-block;
-  min-width: 101px;
-  margin-right: 11px;
+  margin-right: 40px;
 }
 
 .children-only label{
@@ -401,17 +413,30 @@ html{
 
 .children-only input,
 .adults-only input{
-  width: 114px;
+  width: 110px;
   margin: 0;
   padding: 0;
   border: none;
   background-color: var(--basic-grey-light);
+  border: 2px solid var(--basic-grey-light);
   font-weight: 700;
   color: var(--basic-black);
   text-align: center;
   padding-top: 6px;
   padding-bottom: 6px;
   line-height: 26px;
+}
+
+.children-only input:hover,
+.adults-only input:hover{
+  background-color: var(--basic-grey-dark);
+  border: 2px solid var(--basic-grey-dark);
+}
+
+.children-only input:hover,
+.adults-only input:hover{
+  background-color: var(--basic-white);
+  border: 2px solid var(--basic-grey-light);
 }
 
 .adults-only{
@@ -423,10 +448,6 @@ html{
   margin-right: 55px;
   margin-left: 53px;
   display: flex;
-}
-
-.form-finder:hover{
-  background-color: var(--basic-grey-dark);
 }
 
 .form-finder:focus{
@@ -452,7 +473,6 @@ html{
 }
 
 .footer-tag{
-  justify-self: center;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -482,6 +502,7 @@ html{
   font-weight: 400;
   grid-column: 3/4;
   justify-self: center;
+  text-align: center;
   margin: 0;
   padding: 0;
 }
@@ -512,25 +533,9 @@ html{
   margin-right: 8px;
 }
 
-.social-button{
-  color: var(--basic-white);
-  text-align: center;
-  background-color: var(--basic-blue-light);
-}
-
-.social-button:hover,
-.social-button:focus{
-  background-color: var(--basic-blue);
-}
-
-.social-button:active{
-  background-color: var(--basic-blue-dark);
-}
-
 .logo-twitter{
   background-image: url("../img/twitter.svg");
   background-repeat: no-repeat;
-  background-color: var(--basic-blue-light);
   background-position: center;
   width: 46px;
   height: 48px;
@@ -550,8 +555,8 @@ html{
 .logo-youtube{
   background-image: url("../img/youtube.svg");
   background-repeat: no-repeat;
-  background-color: var(--basic-blue-light);
   background-position: center;
+  background-color: var(--basic-blue-light);
   width: 46px;
   height: 48px;
 }
@@ -574,6 +579,7 @@ html{
   background-image: url("../img/filter.jpg");
   background-repeat: no-repeat;
   display: flex;
+
 }
 
 .choice-filter fieldset{
@@ -602,6 +608,7 @@ html{
 .daily-price{
   display: flex;
   flex-basis: 100%;
+  margin-left: auto;
 }
 
 .price-and-show{
@@ -659,13 +666,11 @@ html{
 .choice-filter legend{
   color: var(--basic-white);
   font-size: 16px;
-  line-height: 21px;
   font-weight: 700;
 }
 
 .filter-options{
   list-style: none;
-  line-height: 21px;
   color: var(--basic-white);
 }
 
@@ -681,8 +686,8 @@ html{
   padding: 0;
   padding-left: 36px;
   padding-right: 36px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .show-button:hover{
@@ -840,6 +845,7 @@ html{
   margin-top: 31px;
   margin-bottom: 36px;
   margin-right: 40px;
+  font-weight: 400;
 }
 
 .more-less{
@@ -914,8 +920,10 @@ html{
 
 .logo-place{
   position: absolute;
-  left: 571px;
+  left: 531px;
   display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .visually-hidden {
