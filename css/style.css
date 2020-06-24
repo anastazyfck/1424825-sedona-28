@@ -152,6 +152,11 @@ html{
   color: var(--basic-brown-light);
 }
 
+.menu-current{
+  font-weight: 700;
+  color: var(--basic-brown-light);
+}
+
 .features-list{
   list-style: none;
   margin: 0;
