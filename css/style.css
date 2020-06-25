@@ -178,11 +178,42 @@ html{
   min-height: 330px;
 }
 
+.position-for-picture{
+  position: relative;
+}
+
 .real-features h4 {
   font-size: 21px;
   line-height: 21px;
   margin-top: 160px;
   margin-bottom: 25px;
+ }
+
+ .features-picture-first{
+   background: url("../img/icon-house.svg") no-repeat;
+   position: absolute;
+   top: 60px;
+   left: 162px;
+   width: 75px;
+   height: 72px;
+ }
+
+ .features-picture-second{
+   background: url("../img/icon-burger.svg") no-repeat;
+   position: absolute;
+   top: 60px;
+   left: 162px;
+   width: 75px;
+   height: 70px;
+ }
+
+ .features-picture-third{
+   background: url("../img/icon-gift.svg") no-repeat;
+   position: absolute;
+   top: 55px;
+   left: 168px;
+   width: 64px;
+   height: 77px;
  }
 
 .real-features p{
