@@ -20,7 +20,8 @@
   --basic-brown-bright: #766458;
   --basic-dark: #333333;
   --basic-grey-middle: #ABABAB;
-  --basic-shadow: #d9d9d9
+  --basic-shadow: #d9d9d9;
+  --basic-disabled: #6A6A6A;
 
 }
 
@@ -600,9 +601,16 @@ html{
   padding: 0;
   margin: 0;
   border: none;
-  margin-left: 73px;
-  margin-right: 73px;
+  margin-right: 0;
   margin-top: 26px;
+}
+
+.first-filter{
+  margin-left: 73px;
+}
+
+.second-filter{
+  margin-left: 119px;
 }
 
 .choice-filter ul{
@@ -628,6 +636,8 @@ html{
   display: flex;
   flex-wrap: wrap;
   margin-left: auto;
+  width: 317px;
+  margin-right: 73px;
 }
 
 .type-hotel h3{
@@ -683,6 +693,47 @@ html{
 .filter-options{
   list-style: none;
   color: var(--basic-white);
+  margin: 0;
+}
+
+.filter-options label{
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  margin-left: 40px;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 19px;
+  height: 19px;
+  border: 2px solid var(--basic-white);
+  border-radius: 3px;
+}
+
+.filter-input-checkbox:disabled + label::before {
+  border: 2px solid var(--basic-disabled);
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -36px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checked-sign.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: transparent;
+}
+
+.filter-input-checkbox:checked:disabled + label::after{
+  border: 2px solid var(--basic-disabled);
 }
 
 .show-button{
@@ -716,45 +767,22 @@ html{
 
 .watch-results p{
   font-size: 21px;
+  line-height: 26px;
   font-weight: 700;
   margin: 0;
+  padding: 0;
   margin-top: 29px;
-  margin-bottom: 29px;
+  margin-bottom: 26px;
   margin-right: 46px;
-}
-
-.watch-results h2{
-  font-size: 12px;
-  line-height: 18px;
 }
 
 .watch-results ul{
   list-style: none;
 }
 
-.watch-results a{
-  font-size: 12px;
-  line-height: 18px;
-  opacity: 0.3;
-  border-bottom: 1px var(--basic-blue-light) dotted;
-}
-
-.watch-results a:hover,
-.watch-results a:focus{
-  color: var(--basic-blue-light);
-  opacity: 1;
-}
-
-.watch-results a:active{
-  color: var(--basic-black);
-  border: none;
-  opacity: 1;
-}
-
 .range-filter{
   margin: 0;
   margin-top: 11px;
-  width: 317px;
 }
 
 .range-from-to{
@@ -837,12 +865,14 @@ html{
   margin-top: 31px;
   margin-bottom: 36px;
   padding-right: 32px;
-  color: var(--basic-black);
-  opacity: 0.3;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .guideline a{
-  border-bottom: 1px dashed var(--basic-blue-light);
+  color: var(--basic-black);
+  opacity: 0.3;
+  border-bottom: 1px dotted var(--basic-blue-light);
 }
 
 .guideline a:hover,
@@ -852,7 +882,12 @@ html{
 
 .guideline a:active{
   color: var(--basic-black);
-  border: none;
+  border-bottom: transparent;
+}
+
+.chosen{
+  color: var(--basic-blue-light);
+  border-bottom: none;
 }
 
 .guideline-general{
@@ -861,6 +896,8 @@ html{
   margin-bottom: 36px;
   margin-right: 40px;
   font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .more-less{
@@ -868,6 +905,43 @@ html{
   margin-left: auto;
   margin-top: 40px;
   margin-bottom: 36px;
+}
+
+.switch-up,
+.switch-down{
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px;
+}
+
+.switch-up svg{
+  fill: var(--basic-white-dark);
+}
+
+.switch-up:hover svg,
+.switch-up:focus svg{
+  fill: var(--basic-black);
+}
+
+.switch-up:active svg{
+  fill: var(--basic-blue-light);
+}
+
+.switch-down svg{
+  fill: var(--basic-white-dark);
+}
+
+.switch-down:hover svg,
+.switch-down:focus svg{
+  fill: var(--basic-black);
+}
+
+.switch-down:active svg{
+  fill: var(--basic-blue-light);
+}
+
+.active svg{
+  fill: var(--basic-blue-light);
 }
 
 .social{
@@ -896,20 +970,25 @@ html{
   flex-wrap: wrap;
   width: 270px;
   margin-right: auto;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 
-.book-conditions h3 a{
+.name-hotel a{
   color: var(--basic-black);
 }
 
-.book-conditions h3{
+.name-hotel{
   margin-bottom: 7px;
   margin-top: 24px;
 }
 
 .book-conditions p{
   margin: 0;
+}
+
+.position-hotel{
+  display: inline-block;
+  min-width: 116px;
 }
 
 .type-price{
@@ -931,8 +1010,10 @@ html{
 
 .stars{
   background-image: url("../img/star.svg");
-  background-repeat: repeat;
+  background-repeat: space;
+  background-color: var(--basic-white);
   height: 17px;
+  width: 19px;
   margin: 0;
   padding: 0;
   margin-bottom: 47px;
@@ -940,15 +1021,15 @@ html{
 }
 
 .stars-four{
-  width: 72px;
+  width: 87px;
 }
 
 .stars-three{
-  width: 54px;
+  width: 66px;
 }
 
 .stars-two{
-  width: 36px;
+  width: 42px;
 }
 
 .book-conditions .button{
