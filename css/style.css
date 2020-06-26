@@ -344,7 +344,7 @@ html{
   margin-left: auto;
   margin-right: auto;
   margin-top: 58px;
-  margin-bottom: 51px;
+  margin-bottom: 136px;
   text-align: center;
   line-height: 24px;
 }
@@ -370,6 +370,13 @@ html{
 .form-introduction:active{
   background-color: var(--basic-brown-dark);
   opacity: 0.3;
+}
+
+.modal{
+  position: absolute;
+  top: 72%;
+  left: 26%;
+  z-index: 1;
 }
 
 .form-finder{
@@ -435,9 +442,10 @@ html{
 
 .button-calendar{
   position: absolute;
-  left: 800px;
-  width: 21px;
-  height: 23px;
+  right: -9px;
+  top: 6px;
+  width: 35px;
+  height: 38px;
   background-image: url("../img/calendar-gray.svg");
   background-repeat: no-repeat;
   border: none;
@@ -545,6 +553,16 @@ html{
   margin: 55px;
   margin-top: 41px;
   padding: 16px 181px;
+}
+
+.map{
+  position: relative;
+  width: 1199px;
+  height: 594px;
+}
+
+.map iframe{
+  border: none;
 }
 
 .main-footer {
@@ -657,7 +675,6 @@ html{
   background-image: url("../img/filter.jpg");
   background-repeat: no-repeat;
   display: flex;
-
 }
 
 .choice-filter fieldset{
@@ -826,17 +843,18 @@ html{
   padding: 0;
   margin-left: 73px;
   margin-right: 73px;
+  align-items: center;
 }
 
-.watch-results p{
+.found-number{
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   margin: 0;
   padding: 0;
   margin-top: 29px;
-  margin-bottom: 26px;
   margin-right: 46px;
+  margin-bottom: 31px;
 }
 
 .watch-results ul{
@@ -887,9 +905,9 @@ html{
   border: none;
   color: var(--basic-white);
   width: 50px;
-  text-align: center;
   margin: 0;
   padding: 0;
+  padding-left: 3px;
   -moz-appearance: textfield;
   appearance: textfield;
 }
@@ -946,12 +964,12 @@ html{
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-top: 31px;
+  margin-bottom: 37px;
 }
 
 .guideline li{
   display: inline-block;
-  margin-top: 31px;
-  margin-bottom: 36px;
   padding-right: 32px;
   font-size: 12px;
   line-height: 18px;
@@ -991,8 +1009,7 @@ html{
 .more-less{
   display: flex;
   margin-left: auto;
-  margin-top: 40px;
-  margin-bottom: 36px;
+  text-align: center;
 }
 
 .switch-up,
@@ -1038,11 +1055,6 @@ html{
   justify-content: space-between;
   margin: 0;
   padding: 0;
-}
-
-.search-form{
-  display: grid;
-  grid-template-rows: auto 594px;
 }
 
 .hotel-information{
