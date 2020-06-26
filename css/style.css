@@ -24,7 +24,7 @@
   --basic-shadow: #d9d9d9;
   --basic-disabled: #6A6A6A;
   --basic-grey-transparent: rgba(171, 171, 171, 0.3);
-
+  --basic-white-background: rgba(255, 255, 255, 0.9);
 }
 
 body{
@@ -568,7 +568,7 @@ html{
 .main-footer {
   font-weight: 700;
   font-size: 21px;
-  background-color: var(--basic-white);
+  background-color: var(--basic-white-background);
   display: grid;
   grid-template-columns: 1fr 400px 1fr;
   padding-left: 73px;
