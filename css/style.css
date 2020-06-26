@@ -304,6 +304,7 @@ html{
 .form-description-highlight {
   font-size: 30px;
   font-weight: 700;
+  line-height: 24px;
   margin-bottom: 30px;
   display: inline-block;
 }
@@ -820,12 +821,12 @@ html{
   display: flex;
   margin: 0;
   padding: 0;
+  justify-content: space-between;
   padding-left: 50px;
   padding-right: 36px;
   padding-top: 4px;
   padding-bottom: 6px;
   border: 2px solid var(--basic-white);
-  display: flex;
   text-align: center;
 }
 
@@ -840,14 +841,21 @@ html{
 .range-filter input{
   font-family: inherit;
   font-size: inherit;
+  font-weight: inherit;
   background: transparent;
   border: none;
   color: var(--basic-white);
-  width: 100%;
+  width: 50px;
   text-align: center;
   margin: 0;
   padding: 0;
-  font-weight: 400;
+  appearance: textfield;
+}
+
+.range-filter input::-webkit-inner-spin-button,
+.range-filter input::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .range-controls{
@@ -858,7 +866,6 @@ html{
 .range-controls .scale{
   height: 2px;
   background: var(--basic-white);
-  opacity: 0.3;
 }
 
 .range-controls .bar{
@@ -867,21 +874,26 @@ html{
   width: 75%;
 }
 
-.range-controls .toggle {
+.range-controls .toggle{
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 8px solid var(--basic-white);
+  border: 9px solid var(--basic-white);
   border-radius: 50%;
   background-color: var(--basic-grey-middle);
   position: absolute;
-  bottom: 17px;
   left: 0;
+  top: -8px;
   cursor: pointer;
+  box-shadow: 0px 0px 5px var(--basic-grey-middle) 0.3;
 }
 
-.range-controls .toggle-max {
-  left: 241px;
+.range-controls .toggle:hover{
+  border: 10px solid var(--basic-white);
+}
+
+.range-controls .toggle-max{
+  left: 254px;
 }
 
 .guideline{
