@@ -332,6 +332,11 @@ html{
   margin-bottom: 54px;
 }
 
+.form-and-offer{
+  display: grid;
+  grid-template-rows: auto 86px;
+}
+
 .form-description-highlight {
   font-size: 30px;
   font-weight: 700;
@@ -343,8 +348,8 @@ html{
 .interested-offer{
   margin-left: auto;
   margin-right: auto;
-  margin-top: 58px;
-  margin-bottom: 136px;
+  margin-top: 60px;
+  margin-bottom: 48px;
   text-align: center;
   line-height: 24px;
 }
@@ -373,10 +378,7 @@ html{
 }
 
 .modal{
-  position: absolute;
-  top: 72%;
-  left: 26%;
-  z-index: 1;
+  position: relative;
 }
 
 .form-finder{
@@ -390,8 +392,11 @@ html{
 }
 
 .form-look{
+  position: absolute;
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
+  background-color: var(--basic-white);
   box-shadow: 0px 7px 15px var(--basic-shadow);
 }
 
@@ -556,9 +561,9 @@ html{
 }
 
 .map{
-  position: relative;
   width: 1199px;
   height: 594px;
+  margin-bottom: -120px;
 }
 
 .map iframe{
@@ -709,7 +714,7 @@ html{
 
 .daily-price{
   display: flex;
-  flex-basis: 100%;
+  width: 100%;
 }
 
 .price-and-show{
@@ -823,7 +828,7 @@ html{
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   margin-top: 33px;
   padding: 0;
   padding-left: 34px;
@@ -864,6 +869,7 @@ html{
 .range-filter{
   margin: 0;
   margin-top: 11px;
+  flex-grow: 1
 }
 
 .range-from-to{
@@ -871,21 +877,24 @@ html{
   margin: 0;
   padding: 0;
   justify-content: space-between;
-  padding-left: 50px;
-  padding-right: 36px;
-  padding-top: 4px;
+  padding-top: 5px;
   padding-bottom: 6px;
   border: 2px solid var(--basic-white);
+  border-radius: 2px;
   text-align: center;
 }
 
 .range-from{
   display: flex;
+  margin-left: 64px;
+  margin-right: 49px;
 }
 
 .range-to{
   position: relative;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .range-to::before{
@@ -894,7 +903,7 @@ html{
   background-color: var(--basic-white);
   width: 2px;
   height: 22px;
-  left: -50px;
+  left: -54px;
 }
 
 .range-filter input{
@@ -1078,7 +1087,7 @@ html{
 }
 
 .name-hotel{
-  margin-bottom: 7px;
+  margin-bottom: 5px;
   margin-top: 24px;
 }
 
@@ -1133,7 +1142,7 @@ html{
 }
 
 .book-conditions .button{
-  margin-top: 16px;
+  margin-top: 7px;
 }
 
 .logo-place{
