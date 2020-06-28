@@ -1083,12 +1083,9 @@ html{
 }
 
 .book-conditions{
-  display: flex;
-  flex-wrap: wrap;
-  width: 270px;
   margin-right: auto;
   margin-bottom: 30px;
-  margin-top: 21px;
+  margin-top: 23px;
   align-items: center;
 }
 
@@ -1105,6 +1102,8 @@ html{
 }
 
 .position-hotel{
+  margin: 0;
+  margin-top: 7px;
   display: inline-block;
   min-width: 117px;
   text-align: left;
@@ -1121,11 +1120,14 @@ html{
   margin-right: 29px;
 }
 
+.rating-numbers p{
+  margin: 0;
+}
+
 .rating-numbers{
   margin-right: 73px;
   margin-top: 29px;
   margin-bottom: 30px;
-  margin-left: auto;
 }
 
 .stars{
@@ -1152,7 +1154,7 @@ html{
 }
 
 .book-conditions .button{
-  margin-top: 7px;
+  margin-top: 15px;
 }
 
 .logo-place{
