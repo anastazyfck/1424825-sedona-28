@@ -81,8 +81,8 @@ html{
   line-height: 21px;
   background-color: var(--basic-blue-light);
   border: none;
-  padding: 3px 16px;
-  margin-right: 7px;
+  padding: 3px 17px;
+  margin-right: 2px;
 }
 
 .button:hover,
@@ -563,8 +563,9 @@ html{
 
 .map{
   width: 1199px;
-  height: 594px;
+  height: 591px;
   margin-bottom: -120px;
+  overflow: hidden;
 }
 
 .map iframe{
@@ -852,8 +853,8 @@ html{
   display: flex;
   margin: 0;
   padding: 0;
-  margin-left: 68px;
-  margin-right: 73px;
+  margin-left: 73px;
+  margin-right: 68px;
   align-items: center;
 }
 
