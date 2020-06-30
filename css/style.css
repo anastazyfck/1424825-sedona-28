@@ -592,6 +592,7 @@ html {
 }
 
 .footer-phone {
+  color: var(--basic-black);
   display: inline-block;
   line-height: 26px;
   margin-top: 9px;
