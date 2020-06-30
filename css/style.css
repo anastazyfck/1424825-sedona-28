@@ -102,13 +102,13 @@ html {
 }
 
 .welcome-page {
-  background-color: var(--basic-white);
   background: url("../img/intro-welcome.svg") no-repeat center,
   url("../img/welcome-to-sedona.svg") no-repeat 0 100%,
   url("../img/main-background.jpg") no-repeat;
   background-size:456px 350px, auto, auto;
   width: 1200px;
   min-height: 509px;
+  background-color: var(--basic-blue-light);
 }
 
 .header-logo {
@@ -511,8 +511,8 @@ html {
 .adults-children .input-look {
   width: 88px;
   text-align: center;
-  appearance: textfield;
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .adults-children .input-look::-webkit-inner-spin-button,
@@ -658,9 +658,9 @@ html {
 
 .choice-filter {
   display: flex;
-  background-color: var(--basic-grey-light);
   background-image: url("../img/filter.jpg");
   background-repeat: no-repeat;
+  background-color: var(--basic-blue-light);
 }
 
 .choice-filter fieldset {
@@ -899,8 +899,8 @@ html {
   margin: 0;
   padding: 0;
   padding-left: 3px;
-  appearance: textfield;
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .range-filter input::-webkit-inner-spin-button,
