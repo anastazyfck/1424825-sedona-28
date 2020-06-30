@@ -102,13 +102,13 @@ html {
 }
 
 .welcome-page {
+  background-color: var(--basic-white);
   background: url("../img/intro-welcome.svg") no-repeat center,
   url("../img/welcome-to-sedona.svg") no-repeat 0 100%,
   url("../img/main-background.jpg") no-repeat;
   background-size:456px 350px, auto, auto;
   width: 1200px;
   min-height: 509px;
-  background-color: var(--basic-white);
 }
 
 .header-logo {
@@ -219,33 +219,6 @@ html {
   line-height: 21px;
   margin-top: 160px;
   margin-bottom: 25px;
- }
-
- .features-picture-first {
-   background: url("../img/icon-house.svg") no-repeat;
-   top: 60px;
-   left: 162px;
-   width: 75px;
-   height: 72px;
-   position: absolute;
- }
-
- .features-picture-second {
-   background: url("../img/icon-burger.svg") no-repeat;
-   top: 60px;
-   left: 162px;
-   width: 75px;
-   height: 70px;
-   position: absolute;
- }
-
- .features-picture-third {
-   background: url("../img/icon-gift.svg") no-repeat;
-   top: 55px;
-   left: 168px;
-   width: 64px;
-   height: 77px;
-   position: absolute;
  }
 
 .real-features p {
@@ -448,6 +421,7 @@ html {
 
 .button-calendar {
   position: absolute;
+  background-color: inherit;
   right: -9px;
   top: 6px;
   width: 35px;
@@ -455,7 +429,6 @@ html {
   background-image: url("../img/calendar-gray.svg");
   background-repeat: no-repeat;
   border: none;
-  background-color: inherit;
 }
 
 .button-calendar:hover,
@@ -538,8 +511,8 @@ html {
 .adults-children .input-look {
   width: 88px;
   text-align: center;
-  -moz-appearance: textfield;
   appearance: textfield;
+  -moz-appearance: textfield;
 }
 
 .adults-children .input-look::-webkit-inner-spin-button,
@@ -562,6 +535,7 @@ html {
 }
 
 .map {
+  background-color: var(--basic-white);
   width: 1199px;
   height: 591px;
   margin-bottom: -120px;
@@ -925,8 +899,8 @@ html {
   margin: 0;
   padding: 0;
   padding-left: 3px;
-  -moz-appearance: textfield;
   appearance: textfield;
+  -moz-appearance: textfield;
 }
 
 .range-filter input::-webkit-inner-spin-button,
