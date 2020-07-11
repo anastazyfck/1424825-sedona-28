@@ -97,32 +97,44 @@
                      <p class="date-type">
                         <label for="date_arrival">Дата заезда:</label>
                         <span class="position-figures">
-                        <input class="form-finder input-look" type="text" name="date_arrival" id="date_arrival" placeholder="24 апреля 2017" value="24 апреля 2017">
-                        <button class="button-calendar" type="button"></button>
+                        <input class="form-finder input-look form-arrival" type="text" name="date_arrival" id="date_arrival" placeholder="24 апреля 2017" value="24 апреля 2017">
+                        <button class="button-calendar" type="button">
+                          <span class="visually-hidden">Кнопка "календарь"</span>
+                        </button>
                         </span>
                      </p>
                      <p class="date-type">
                         <label for="date_departure">Дата выезда:</label>
                         <span class="position-figures">
-                        <input class="form-finder input-look" type="text" name="date_departure" id="date_departure" placeholder="4 июля 2017" value="4 июля 2017">
-                        <button class="button-calendar" type="button"></button>
+                        <input class="form-finder input-look form-departure" type="text" name="date_departure" id="date_departure" placeholder="4 июля 2017" value="4 июля 2017">
+                        <button class="button-calendar" type="button">
+                          <span class="visually-hidden">Кнопка "календарь"</span>
+                        </button>
                         </span>
                      </p>
                      <div class="adults-children">
                         <p class="adults-only">
                            <label for="number_adults">Взрослые:</label>
                            <span class="position-figures">
-                           <button class="button-background button-less" type="button"></button>
-                           <input class="form-finder input-look" type="number" min="0" max="10" step="1" name="number_adults" id="number_adults" placeholder="0" value="2">
-                           <button class="button-background button-more" type="button"></button>
+                           <button class="button-background button-less" type="button">
+                             <span class="visually-hidden">Кнопка "меньше"</span>
+                           </button>
+                           <input class="form-finder input-look form-adults" type="number" min="0" max="10" step="1" name="number_adults" id="number_adults" placeholder="0" value="2">
+                           <button class="button-background button-more" type="button">
+                             <span class="visually-hidden">Кнопка "больше"</span>
+                           </button>
                            </span>
                         </p>
                         <p class="children-only">
                            <label for="number_kids">Дети:</label>
                            <span class="position-figures">
-                           <button class="button-background button-less" type="button"></button>
-                           <input class="form-finder input-look" type="number" min="0" max="10" step="1" name="number_kids" id="number_kids" placeholder="0" value="0">
-                           <button class="button-background button-more" type="button"></button>
+                           <button class="button-background button-less" type="button">
+                             <span class="visually-hidden">Кнопка "меньше"</span>
+                           </button>
+                           <input class="form-finder input-look form-kids" type="number" min="0" max="10" step="1" name="number_kids" id="number_kids" placeholder="0" value="0">
+                           <button class="button-background button-more" type="button">
+                             <span class="visually-hidden">Кнопка "больше"</span>
+                           </button>
                            </span>
                         </p>
                      </div>
@@ -133,6 +145,7 @@
             <section class="map">
                <h2 class="visually-hidden">Карта местности</h2>
                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d337096.9042433107!2d-111.98745465863199!3d35.06826974313859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da15809a0dee3%3A0x22ca556fbe412052!2sSedona%20%2F%20Red%20Rock%20Country!5e0!3m2!1sru!2sru!4v1593201597177!5m2!1sru!2sru" width="1199" height="594" allowfullscreen title="Седона,США"></iframe>
+               <p><img src="img/map.jpg" width="1199" height="594" alt="Седона,США"></p>
             </section>
          </main>
          <footer class="main-footer">
@@ -174,5 +187,6 @@
             </p>
          </footer>
       </div>
+      <script src="search.js"></script>
    </body>
 </html>
